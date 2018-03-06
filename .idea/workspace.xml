@@ -68,12 +68,12 @@
       <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="70" column="188" lean-forward="false" selection-start-line="70" selection-start-column="188" selection-end-line="70" selection-end-column="188" />
+            <state relative-caret-position="1180">
+              <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
               <folding>
-                <marker date="1520327347553" expanded="true" signature="1358:1409" ph="SELECT * FRO... student_detail_tbl" />
-                <marker date="1520327347553" expanded="true" signature="1999:2155" ph="update stude... " />
-                <marker date="1520327347553" expanded="true" signature="3984:3994" ph="..." />
+                <marker date="1520331126593" expanded="true" signature="1358:1409" ph="SELECT * FRO... student_detail_tbl" />
+                <marker date="1520331126593" expanded="true" signature="1998:2154" ph="update stude... " />
+                <marker date="1520331126593" expanded="true" signature="3982:3992" ph="..." />
               </folding>
             </state>
           </provider>
@@ -189,7 +189,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Company" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -277,16 +277,16 @@
       <workItem from="1488858999269" duration="6534000" />
       <workItem from="1488873957384" duration="22962000" />
       <workItem from="1488990067134" duration="1709000" />
-      <workItem from="1520316419242" duration="9613000" />
+      <workItem from="1520316419242" duration="12050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66486000" />
+    <option name="totallyTimeSpent" value="68923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14427084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -702,12 +702,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="70" column="188" lean-forward="false" selection-start-line="70" selection-start-column="188" selection-end-line="70" selection-end-column="188" />
+        <state relative-caret-position="1180">
+          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
           <folding>
-            <marker date="1520327347553" expanded="true" signature="1358:1409" ph="SELECT * FRO... student_detail_tbl" />
-            <marker date="1520327347553" expanded="true" signature="1999:2155" ph="update stude... " />
-            <marker date="1520327347553" expanded="true" signature="3984:3994" ph="..." />
+            <marker date="1520331126593" expanded="true" signature="1358:1409" ph="SELECT * FRO... student_detail_tbl" />
+            <marker date="1520331126593" expanded="true" signature="1998:2154" ph="update stude... " />
+            <marker date="1520331126593" expanded="true" signature="3982:3992" ph="..." />
           </folding>
         </state>
       </provider>

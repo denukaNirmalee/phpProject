@@ -52,7 +52,6 @@ $result = mysqli_query($db, $query) or die(' error getting data');
         $dept=$row['Std_department'];
 
     }
-
 }
 ?>
 
@@ -68,7 +67,7 @@ if (isset($_POST['btnupdate'])) {
     $fac=$_POST['faculty'];
     $dept=$_POST['department'];
 
-    $query = mysql_query("update student_detail_tbl set Std_name='$full_name',Std_gender='$gender',Std_contact='$contact',Std_faculty='$fac',Std_department='$dept' where Std_id='$id'", $db);
+    $query = mysql_query("update student_detail_tbl set Std_name='$full_name',Std_gender='$gender',Std_contact='$contact',Std_faculty='$fac',Std_department='$dept' where Std_id='$id'",$db);
 
 }
 ?>
