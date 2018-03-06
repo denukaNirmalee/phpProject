@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UoM-insert std data</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<?php
+
+include("connection.php");
+
+if (isset($_POST['btninsert'])) {
+
+    $std_id=$_POST['st_id'];
+    $full_name=$_POST['full_name'];
+    $gender=$_POST['gender'];
+    $contact=$_POST['contact'];
+    $fac=$_POST['faculty'];
+    $dept=$_POST['department'];
+    echo $std_id;
+    echo $full_name;
+
+    $sql_qry = "INSERT INTO student_detail_tbl(Std_id,Std_name,Std_gender,Std_contact,Std_faculty,Std_department)VALUES
+                ('$std_id','$full_name','$gender','$contact','$fac','$dept')";
+    //$result1 = mysql_query($sql_qry);
+
+    if(!mysql_query($sql_qry))
+    {
+        echo 'Not inserted';
+    }
+    else
+    {
+        echo 'Inserted';
+    }
+
+}
+?>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+
+</nav>
+
+<!-- Header -->
+<a name="about"></a>
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h2>University of Moratuwa</h2>
+                    <h3>Insert student data to the database</h3>
+                    <hr class="intro-divider">
+
+                    <div align="center">
+                        <form action = "insert.php" method = "post">
+
+                                <input type="text" name="st_id" style = "width : 400px" class="form-control input-sm chat-input" placeholder="student id"><br>
+
+                                <input type="text" name="full_name" style = "width : 400px" class="form-control input-sm chat-input" placeholder="name with initials"><br>
+
+                                <input type="text" name="gender" style = "width : 400px" class="form-control input-sm chat-input" placeholder="male/female"><br>
+
+                                <input type="text" name="contact" style = "width : 400px" class="form-control input-sm chat-input" placeholder="contact number"><br>
+
+                                <input type="text" name="faculty" style = "width : 400px" class="form-control input-sm chat-input" placeholder="faculty"><br>
+
+                                <input type="text" name="department" style = "width : 400px" class="form-control input-sm chat-input" placeholder="department"><br>
+
+                                <input type="submit" name="btninsert" value="Insert"  class="btn btn-default">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.intro-header -->
+
+<!-- Page Content -->
+
+<a  name="services"></a>
+<!--
+ <div class="content-section-a">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
+                <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/phones.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="home.php">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="about.php">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="contact.php">Contact</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                       <a href="adminLogin.php">Admin Login</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
